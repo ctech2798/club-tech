@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CLUB-TECH — Ta limite c'est ton imagination</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#05060d;--fg:#fff;--muted:#9fb0d0;--blue:#1e7bff;--violet:#8a3ffc}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Montserrat,"Segoe UI",system-ui,Arial,sans-serif;background-image:radial-gradient(circle at 80% 0,#14245a55,transparent 50%),radial-gradient(circle at 0 100%,#3a1a7a44,transparent 45%)}
+.wrap{max-width:560px;margin:0 auto;padding:28px 20px 40px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand svg{width:64px;height:64px;flex:none}
+h1{margin:0;font-size:2rem;letter-spacing:1px;font-weight:800}
+.tag{margin:2px 0 0;font-size:.62rem;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+.row{display:flex;align-items:center;gap:14px;margin-top:16px;text-decoration:none;color:var(--fg)}
+.ico{width:48px;height:48px;border:2px solid var(--blue);border-radius:50%;display:grid;place-items:center;flex:none}
+.ico svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2}
+.row span.t{border-left:2px solid var(--blue);padding-left:14px;font-size:1.05rem;word-break:break-all}
+.bar{height:4px;width:55%;background:linear-gradient(90deg,var(--blue),var(--violet));margin:28px 0 14px;border-radius:2px}
+.follow{letter-spacing:.3em;font-size:.8rem;color:var(--muted);margin:0 0 12px}
+.soc{display:flex;gap:12px}
+.soc a{width:52px;height:52px;border:2px solid var(--blue);border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;text-decoration:none;font-size:.7rem}
+.card{margin:32px auto 0;background:#fff;border-radius:18px;padding:16px;width:fit-content;position:relative}
+#qr{width:220px;height:220px}
+#qr img,#qr canvas{width:220px!important;height:220px!important;display:block}
+.logo{position:absolute;left:50%;top:50%;width:48px;height:48px;margin:-24px 0 0 -24px;background:#05060d;border-radius:10px;display:grid;place-items:center}
+.logo svg{width:30px;height:30px}
+.hint{text-align:center;color:var(--muted);font-size:.8rem;margin-top:12px}
+.foot{margin-top:28px;text-align:center;font-size:.7rem;letter-spacing:.2em;color:var(--muted)}
+.foot b{color:var(--blue);font-weight:400;padding:0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8a3ffc"/><stop offset="1" stop-color="#00d4ff"/></linearGradient></defs><g stroke="url(#g)" stroke-width="10" stroke-linecap="round"><path d="M8 34h26M24 22l12 0M30 46h26M40 34l16 0"/></g><circle cx="42" cy="9" r="6" fill="#00d4ff"/><circle cx="22" cy="57" r="6" fill="#8a3ffc"/></svg>
+    <div><h1>CLUB-TECH</h1><p class="tag">Ta limite c'est ton imagination</p></div>
+  </div>
+
+  <a class="row" href="mailto:Ctech2798@gmail.com"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="t">Ctech2798@gmail.com</span></a>
+  <a class="row" href="tel:074590614"><span class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><span class="t">074590614</span></a>
+  <a class="row" href="tel:077235973"><span class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><span class="t">077235973</span></a>
+
+  <div class="bar"></div>
+  <p class="follow">SUIVEZ-NOUS SUR</p>
+  <div class="soc">
+    <a id="fb" href="#" aria-label="Facebook">FB</a>
+    <a id="wa" href="#" aria-label="WhatsApp">WA</a>
+    <a id="tt" href="#" aria-label="TikTok">TT</a>
+  </div>
+
+  <div class="card">
+    <div id="qr"></div>
+    <div class="logo"><svg viewBox="0 0 64 64"><g stroke="url(#g)" stroke-width="10" stroke-linecap="round"><path d="M8 34h26M24 22l12 0M30 46h26M40 34l16 0"/></g></svg></div>
+  </div>
+  <p class="hint">Scannez pour ouvrir cette page</p>
+
+  <div class="foot">INNOVER<b>/</b>APPRENDRE<b>/</b>AVANCER</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// Liens à compléter (laisser vide = lien désactivé)
+var LINKS = { facebook: "https://www.facebook.com/share/19NQDusmVQ/", whatsapp: "https://whatsapp.com/channel/0029Vb79WcqIiRoomltIwq3x", tiktok: "https://vm.tiktok.com/ZS9D4vhvWrrEX-yA1DN/" };
+[["fb","facebook"],["wa","whatsapp"],["tt","tiktok"]].forEach(function(p){
+  var el=document.getElementById(p[0]), u=LINKS[p[1]];
+  if(u){el.href=u;el.target="_blank";el.rel="noopener"}else{el.style.opacity=".45";el.removeAttribute("href")}
+});
+// Le QR encode l'adresse de cette page
+try{
+  new QRCode(document.getElementById("qr"),{text:location.href,width:440,height:440,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.H});
+}catch(e){document.getElementById("qr").textContent=location.href}
+</script>
+</body>
+</html>
